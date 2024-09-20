@@ -1,0 +1,120 @@
+[
+    {
+        "Hora_coleta": "17:01",
+        "Dados": [
+            {
+                "ID Mapeado": 1,
+                "Nome": "Ingresso 1 Parque 1 Dia",
+                "Preco Parcelado": 1016,
+                "Preco Avista": 985.52
+            },
+            {
+                "ID Mapeado": 2,
+                "Nome": "Ingresso Explorer 2 Parques - 2024",
+                "Preco Parcelado": 2216,
+                "Preco Avista": 2149.52
+            },
+            {
+                "ID Mapeado": 3,
+                "Nome": "Ingresso 2 Parques 2 Dias (Parque a Parque)",
+                "Preco Parcelado": 1907,
+                "Preco Avista": 1849.79
+            },
+            {
+                "ID Mapeado": 4,
+                "Nome": "Ingresso 2 Parques 3 Dias (Parque a Parque)",
+                "Preco Parcelado": 2025,
+                "Preco Avista": 1964.25
+            },
+            {
+                "ID Mapeado": 5,
+                "Nome": "Ingresso 2 Parques 2 Dias",
+                "Preco Parcelado": 1904,
+                "Preco Avista": 1846.8799999999999
+            },
+            {
+                "ID Mapeado": 6,
+                "Nome": "Ingresso 2-Park 1-Day Park-to-Park",
+                "Preco Parcelado": 1389,
+                "Preco Avista": 1347.33
+            },
+            {
+                "ID Mapeado": 7,
+                "Nome": "Ingresso Explorer 3 Parques 2025",
+                "Preco Parcelado": 2326,
+                "Preco Avista": 2256.22
+            },
+            {
+                "ID Mapeado": 8,
+                "Nome": "Ingresso 3 Parques 3-Dias Parque-a-Parque",
+                "Preco Parcelado": 2220,
+                "Preco Avista": 2153.4
+            },
+            {
+                "ID Mapeado": 9,
+                "Nome": "Ingresso 3 Parques 2-Dias Parque-a-Parque",
+                "Preco Parcelado": 2103,
+                "Preco Avista": 2039.9099999999999
+            }
+        ]
+    },
+    {
+        "Hora_coleta": "17:02",
+        "Dados": [
+            {
+                "ID Mapeado": 1,
+                "Nome": "Ingresso 1 Parque 1 Dia",
+                "Preco Parcelado": 1016,
+                "Preco Avista": 985.52
+            },
+            {
+                "ID Mapeado": 2,
+                "Nome": "Ingresso Explorer 2 Parques - 2024",
+                "Preco Parcelado": 2216,
+                "Preco Avista": 2149.52
+            },
+            {
+                "ID Mapeado": 3,
+                "Nome": "Ingresso 2 Parques 2 Dias (Parque a Parque)",
+                "Preco Parcelado": 1907,
+                "Preco Avista": 1849.79
+            },
+            {
+                "ID Mapeado": 4,
+                "Nome": "Ingresso 2 Parques 3 Dias (Parque a Parque)",
+                "Preco Parcelado": 2025,
+                "Preco Avista": 1964.25
+            },
+            {
+                "ID Mapeado": 5,
+                "Nome": "Ingresso 2 Parques 2 Dias",
+                "Preco Parcelado": 1904,
+                "Preco Avista": 1846.8799999999999
+            },
+            {
+                "ID Mapeado": 6,
+                "Nome": "Ingresso 2-Park 1-Day Park-to-Park",
+                "Preco Parcelado": 1389,
+                "Preco Avista": 1347.33
+            },
+            {
+                "ID Mapeado": 7,
+                "Nome": "Ingresso Explorer 3 Parques 2025",
+                "Preco Parcelado": 2326,
+                "Preco Avista": 2256.22
+            },
+            {
+                "ID Mapeado": 8,
+                "Nome": "Ingresso 3 Parques 3-Dias Parque-a-Parque",
+                "Preco Parcelado": 2220,
+                "Preco Avista": 2153.4
+            },
+            {
+                "ID Mapeado": 9,
+                "Nome": "Ingresso 3 Parques 2-Dias Parque-a-Parque",
+                "Preco Parcelado": 2103,
+                "Preco Avista": 2039.9099999999999
+            }
+        ]
+    }
+]

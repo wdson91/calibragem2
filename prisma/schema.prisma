@@ -1,0 +1,77 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Agrupamento {
+  id     Int      @id @default(autoincrement())
+  nome   String?  @db.VarChar(225)
+  Parque Parque[]
+}
+
+model Parque {
+  id             Int              @id @default(autoincrement())
+  nome           String?          @db.VarChar(255)
+  agrupamento    Int?
+  Agrupamento    Agrupamento?     @relation(fields: [agrupamento], references: [id])
+  Coleta         Coleta[]
+  CombosProdutos CombosProdutos[]
+}
+
+model Categoria {
+  id     Int      @id @default(autoincrement())
+  nome   String?  @db.VarChar(255)
+  Coleta Coleta[]
+}
+
+model Empresa {
+  id     Int      @id @default(autoincrement())
+  slug   String?  @db.VarChar(45)
+  nome   String?  @db.VarChar(45)
+  Coleta Coleta[]
+}
+
+model Coleta {
+  id               Int       @id @default(autoincrement())
+  empresa          Int?
+  data_coleta      DateTime?
+  hora_coleta      DateTime?
+  data_viagem      DateTime?
+  parque           Int?
+  preco_parcelado  Float?
+  preco_avista     Float?
+  margem           Float?
+  margem_cat       Float?
+  categoria        Int?
+  data_registro    DateTime? @default(now())
+  data_atualizacao DateTime? @updatedAt
+  atualizado_por   String?   @db.VarChar(45)
+
+  Empresa   Empresa?   @relation(fields: [empresa], references: [id])
+  Parque    Parque?    @relation(fields: [parque], references: [id])
+  Categoria Categoria? @relation(fields: [categoria], references: [id])
+}
+
+model Combos {
+  id       Int              @id @default(autoincrement())
+  nome     String?          @db.VarChar(255)
+  Produtos CombosProdutos[]
+}
+
+model CombosProdutos {
+  id      Int @id @default(autoincrement())
+  produto Int
+  combo   Int
+
+  Parque Parque @relation(fields: [produto], references: [id])
+  Combos Combos @relation(fields: [combo], references: [id])
+}
